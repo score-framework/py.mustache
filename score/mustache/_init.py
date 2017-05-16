@@ -47,8 +47,8 @@ def init(confdict, tpl):
 class ConfiguredMustacheModule(ConfiguredModule):
 
     def __init__(self, tpl, extension):
-        import score.jslib
-        super().__init__(score.jslib)
+        import score.mustache
+        super().__init__(score.mustache)
         self.tpl = tpl
         self.extension = extension
         tpl.engines[extension] = self._create_renderer
