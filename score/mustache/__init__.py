@@ -1,4 +1,4 @@
-# Copyright © 2015,2016 STRG.AT GmbH, Vienna, Austria
+# Copyright © 2016,2017 STRG.AT GmbH, Vienna, Austria
 #
 # This file is part of the The SCORE Framework.
 #
@@ -25,7 +25,5 @@
 # Licensee has his registered seat, an establishment or assets.
 
 from ._init import init, ConfiguredMustacheModule
-from .engine import Engine
 
-
-__all__ = ('init', 'ConfiguredMustacheModule', 'Engine')
+__all__ = ('init', 'ConfiguredMustacheModule')

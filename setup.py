@@ -1,4 +1,4 @@
-# Copyright © 2015,2016 STRG.AT GmbH, Vienna, Austria
+# Copyright © 2016,2017 STRG.AT GmbH, Vienna, Austria
 #
 # This file is part of the The SCORE Framework.
 #
@@ -34,20 +34,30 @@ with open(os.path.join(here, 'README.rst')) as f:
 setup(
     name='score.mustache',
     version='0.0.1',
-    description='Mustache renderer of The SCORE Framework',
+    description='Renderer for mustache files for The SCORE Framework',
     long_description=README,
     author='strg.at',
     author_email='score@strg.at',
     url='http://score-framework.org',
-    keywords='score framework javascript mustache',
+    keywords='score framework web mustache',
     packages=['score', 'score.mustache'],
     namespace_packages=['score'],
     zip_safe=False,
     license='LGPL',
+    classifiers=[
+        'Development Status :: 4 - Beta',
+        'Environment :: Console',
+        'Environment :: Web Environment',
+        'Intended Audience :: Developers',
+        'License :: OSI Approved :: GNU Lesser General '
+            'Public License v3 or later (LGPLv3+)',
+        'Operating System :: OS Independent',
+        'Programming Language :: Python :: 3',
+        'Programming Language :: Python :: 3.4',
+        'Programming Language :: Python :: 3.5',
+        'Topic :: Software Development :: Libraries :: Application Frameworks',
+    ],
     install_requires=[
-        'score.init',
-        'score.js>=0.3.0',
-        'score.http>=0.2.6',
-        'pystache',
+        'score.tpl >= 0.2.1',
     ],
 )
