@@ -34,13 +34,15 @@ defaults = {
 }
 
 
-def init(confdict, tpl):
+def init(confdict, tpl, requirejs=None):
     """
     Initializes this module acoording to the :ref:`SCORE module initialization
     guidelines <module_initialization>` with the following configuration keys:
     """
     conf = defaults.copy()
     conf.update(confdict)
+    if requirejs:
+        requirejs.passthrough_extensions.append(conf['extension'])
     return ConfiguredMustacheModule(tpl, conf['extension'])
 
 
