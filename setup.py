@@ -59,5 +59,6 @@ setup(
     ],
     install_requires=[
         'score.tpl >= 0.2.1',
+        'pystache',
     ],
 )
