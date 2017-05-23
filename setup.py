@@ -33,7 +33,7 @@ with open(os.path.join(here, 'README.rst')) as f:
 
 setup(
     name='score.mustache',
-    version='0.1.1',
+    version='0.1.2',
     description='Renderer for mustache files for The SCORE Framework',
     long_description=README,
     author='strg.at',
