@@ -1,4 +1,4 @@
-# Copyright © 2016,2017 STRG.AT GmbH, Vienna, Austria
+# Copyright © 2016-2018 STRG.AT GmbH, Vienna, Austria
 #
 # This file is part of the The SCORE Framework.
 #
@@ -33,7 +33,7 @@ with open(os.path.join(here, 'README.rst')) as f:
 
 setup(
     name='score.mustache',
-    version='0.1.2',
+    version='0.1.3',
     description='Renderer for mustache files for The SCORE Framework',
     long_description=README,
     author='strg.at',
